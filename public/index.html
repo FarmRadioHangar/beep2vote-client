@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/client.css" rel="stylesheet">
+    <title>beep2vote simulator</title>
+    <style type="text/css">
+        body {
+            background: url(img/logo.png) top center no-repeat, url(img/bg.png) center top repeat;
+        }
+        @media screen and (max-width: 479px) {
+            .hidden-xxs {
+                display: none;
+            }
+        }
+        button.call:before, button.hangup:before {
+            background-image: url(img/buttons.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <script src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
