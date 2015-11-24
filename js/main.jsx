@@ -56,7 +56,9 @@ class TwilioClient extends React.Component {
                 <div className='form-group'>
                   <div className='row'>
                     <div className='col-xs-12'>
-                      {message}
+                      <p style={{background: '#fff', width: '100%', padding: '16px', marginTop: '21px', border: '1px solid #aaa'}}>
+                        {message}
+                      </p>
                     </div>
                   </div>
                 </div>
