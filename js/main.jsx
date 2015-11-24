@@ -17,10 +17,9 @@ class TwilioClient extends React.Component {
     this.sendDigits = this.sendDigits.bind(this)
   }
   callOut() {
-    let call = Twilio.Device.connect({
-      'PhoneNumber': '+49 1573 5985777'
-    })
-    store.dispatch(connectCall(call))
+    store.dispatch(connectCall(Twilio.Device.connect({
+      'PhoneNumber' : '+49 1573 5985777'
+    })))
   }
   hangup() {
     Twilio.Device.disconnectAll()
@@ -56,8 +55,8 @@ class TwilioClient extends React.Component {
                 </div> 
               </div>
             </div>
-            <div className='form-group form-group-lg'>
-              {!!message && (
+            {!!message && (
+              <div className='form-group form-group-lg'>
                 <div className='form-group'>
                   <div className='row'>
                     <div className='col-xs-12'>
@@ -67,8 +66,8 @@ class TwilioClient extends React.Component {
                     </div>
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
             {padVisible && (
               <div className='form-group'>
                 <div>
