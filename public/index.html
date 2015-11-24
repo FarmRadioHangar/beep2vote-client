@@ -11,18 +11,20 @@
     <title>beep2vote simulator</title>
     <style type="text/css">
         body {
-            /*
-            background: url(img/logo.png) top center no-repeat, url(img/bg.png) center top repeat;
-            */
             background: url(img/bg.png) center top repeat;
         }
         @media screen and (max-width: 479px) {
             .hidden-xxs {
                 display: none;
             }
+            button.call:before, button.hangup:before {
+                margin: 0 28%;
+            }
         }
         button.call, button.hangup {
             margin: 0;
+            text-align: center;
+            width: 100%;
         }
         button.call:before, button.hangup:before {
             background-image: url(img/buttons.png);

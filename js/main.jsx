@@ -39,18 +39,18 @@ class TwilioClient extends React.Component {
             <div className='form-group'>
               <div className='row'>
                 <div className='col-xs-12'>
-                  <img src='img/logo.png' className='img-responsive' />
+                  <img src='img/logo.png' className='img-responsive center-block' />
                 </div>
               </div>
               <div className='row'>
                 <div className='col-xs-6 col-sm-5'>
                   <button className='call' onClick={this.callOut.bind(this)}>
-                    Call
+                    <span className='hidden-xxs'>Call</span>
                   </button>
                 </div> 
                 <div className='col-xs-6 col-sm-7'>
                   <button className='hangup' onClick={this.hangup.bind(this)}>
-                    Hangup
+                    <span className='hidden-xxs'>Hangup</span>
                   </button>
                 </div> 
               </div>
