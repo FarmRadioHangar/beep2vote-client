@@ -39,6 +39,11 @@ class TwilioClient extends React.Component {
           <div className='col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3'>
             <div className='form-group'>
               <div className='row'>
+                <div className='col-xs-12'>
+                  <img src='img/logo.png' className='img-responsive' />
+                </div>
+              </div>
+              <div className='row'>
                 <div className='col-xs-6 col-sm-5'>
                   <button className='call' onClick={this.callOut.bind(this)}>
                     Call
